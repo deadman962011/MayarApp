@@ -1,0 +1,26 @@
+#sidebar ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 0px !important;
+    padding-right: 30px !important;
+    background: #0e2335
+ }
+
+
+
+  #sidebar ul li a[aria-expanded="false"]::before {
+    content: '\e259';
+    display: block;
+    position: absolute;
+    font-family: 'Glyphicons Halflings';
+    font-size: 0.6em;
+    right:200px;
+  }
+  #sidebar ul li a[aria-expanded="true"]::before {
+    content: '\e260';
+    display: block;
+    position: absolute;
+    font-family: 'Glyphicons Halflings';
+    font-size: 0.6em;
+    right:200px;
+
+  }

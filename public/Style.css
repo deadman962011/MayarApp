@@ -1,0 +1,445 @@
+body{
+    background-color:lightgray;
+}
+.LogInPanel{
+    background-color: white;
+    border-radius: 12px;
+    margin:100px 0;
+    padding: 40px 70px;
+    box-shadow: 1px 0 20px 12px rgba(0,0,0,.075);
+}
+.ErrorSign{
+    z-index: 5;
+    position: absolute;
+    top: 50px;
+}
+
+.DBOX{
+
+  background-color: white;
+  padding:12px;
+  border-radius: 6px;
+  margin: 1px;
+  margin-top:6px;
+  /* min-height: 300px; */
+
+}
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+.wrapper {
+    display: flex;
+    align-items: stretch;
+  }
+  
+  #sidebar {
+    min-width: 215px;
+    max-width: 225px;
+    background: #0e1f2d;
+    color: #fff;
+    transition: all 0.3s;
+  
+  }
+  
+  #sidebar.active {
+    margin-left: -250px;
+  }
+  
+  #sidebar .sidebar-header {
+    padding: 10px;
+    background: #0e1f2d;
+  }
+  
+  #sidebar ul.components {
+    padding: 20px 0;
+    
+  }
+  
+  #sidebar ul p {
+    color: #fff;
+    padding: 10px;
+  }
+  
+  #sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    color: rgb(190, 190, 190);
+    text-decoration: none;
+    font-weight: 600;
+   
+  }
+  #sidebar ul li a:hover {
+    color:white;
+    background:#0e2335;
+    
+  }
+  
+  
+  #sidebar ul li.active > a {
+    color: white;
+    background: #0e2335;
+  
+  }
+
+  #sidebar ul li  a[aria-expanded="true"] {
+    color: white;
+    background: #0e2335;
+  }
+  
+  
+  #sidebar ul li a[data-toggle="collapse"] {
+    position: relative;
+  }
+  
+  
+  
+  #sidebar ul li a[aria-expanded="false"]::before {
+    content: '\e259';
+    display: block;
+    position: absolute;
+    font-family: 'Glyphicons Halflings';
+    font-size: 0.6em;
+    right: 30px;
+  }
+  #sidebar ul li a[aria-expanded="true"]::before {
+    content: '\e260';
+    display: block;
+    position: absolute;
+    font-family: 'Glyphicons Halflings';
+    font-size: 0.6em;
+    right: 30px;
+    
+  }
+
+  #Content {
+    width: 98% !important;
+    max-width: 98% !important;
+    padding: 14px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    margin: 10px;
+    background-color: white;
+    border-radius: 6px;
+    background-color: white;
+
+    }
+
+
+    #ContentBlank {
+      width: 100%;
+      padding: 15px;
+      min-height: 100vh;
+      transition: all 0.3s;
+      margin:0;
+      border-radius: 6px;
+      }
+
+    .navbar{
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+    }
+    
+    /* ---------------------------------------------------
+    MEDIAQUERIES
+    ----------------------------------------------------- */
+    
+    @media (max-width: 768px) {
+    #sidebar {
+    margin-left: -224px;
+    }
+    #sidebar.active {
+    margin-left: 0;
+    }
+    #sidebarCollapse span {
+    display: none;
+    }
+
+    /* #Content{
+      margin-left: 12px;
+      margin-right: 0px;
+      margin-top: 16px;
+      margin-bottom: 16px;
+    } */
+    }
+
+  .SideNavActive{
+    /* margin-left: -224px; */
+    margin-left:0px !important;
+    z-index: 9;
+    position: fixed;
+    height: 100%;
+  }
+
+  .Dashboard{
+
+    background-color: white;
+    margin: 25px 12px 25px 12px;
+    padding:20px;
+    border-radius: 4px;
+    min-height: 93vh;
+    position: relative;
+    
+    }
+
+    .OrderFileList{
+      list-style:none;
+      /* padding: 20px 20px 50px 20px; */
+      overflow-y: overlay;
+      max-height: 300px;
+      border: 1px red solid;
+      border-radius: 6px;
+      padding: 16px;
+    }
+
+    .OrderFileList li {
+      /* float:left; */
+      margin:16px 0;
+   
+    }
+
+    .OrderFileList li img {
+      width: 90px;
+    }
+
+    .OrderFileList li h4 {
+      text-align: center;
+      display: inline-block;
+      padding:16px;
+    }
+
+    .ServiceBox{
+      background: white;
+      padding: 16px;
+      margin-bottom: 12px;
+      border-radius: 8px;
+      /* height: auto; */
+      /* height:450px; */
+      height: 380px;
+    }
+    
+    .ServiceBox h4 {
+      text-align:center;
+      font-weight:bold;
+      padding:8px 0;
+    }
+
+
+    .ServiceOptions{
+      padding: 4% 0;
+      width:100%;
+    }
+
+    .ServiceOptions > .btn {
+
+      width:33.333333%
+
+    }
+
+    .UpdatesList{
+      border: 1px red solid;
+      height: fit-content;
+      margin-left: 8.3333%;
+      width: 83.3333%;
+      padding: 8px;
+    }
+
+    .UpgradeOne{
+      border: 1px blue solid;
+      min-height: 85px;
+      height: auto;
+      margin: 12px 0;
+    }
+
+    .UpdateSerAddBtn {
+      background: gainsboro;
+      border: 1px white solid;
+      cursor:pointer;
+      margin-bottom: 12px;
+    }
+
+    .UpdateSerAddBtn span{
+     text-align: center;
+     font-size: 68px;
+     width: 100%;
+     font-weight: bolder;
+    }
+
+    .UpdateSerAddBtn p {
+     text-align: center;
+    }
+
+    .SideNavBtn{
+      float: left;
+      margin-right: 0px;
+      margin-left: 16px;
+      background: #0e1f2d;
+      border: 1px #234867 solid;
+    }
+    
+    #dataTable{
+      width: 99%!important;
+
+    }
+
+    .EmpOpts{
+      width:100%;
+    }
+
+   .EmpOpts > .btn{
+
+   padding:6px 10px;
+   width:50%;
+
+   }
+
+
+   .ContactsBlock{
+    border: 1px red solid;
+    min-height: 550px;
+    display: inline-block;
+    padding:0;
+    /* width: 37%; */
+   }
+
+   .ContactsBlock ul{
+    list-style: none;
+    /* width: 900px; */
+    padding: 0;
+    margin: 0;
+   }
+
+   .MsgContact{
+    padding: 10px;
+    height: 88px;
+    margin: 10px 0;
+    /* border-bottom: 1px black solid; */
+   }
+
+   .ChatBlock {
+    border: 1px blue solid;
+    display: inline-block;
+    /* width: 59%; */
+    min-height: 550px;
+   }
+
+   .ChatBox{
+
+    position: absolute;
+    top:0;
+    width: 92%;
+    overflow-y: scroll;
+    max-height: 490px;
+
+   }
+
+   .divider{
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+   }
+
+   .SendMsgForm{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+   }
+
+  .MsgMe ,.MsgHim{
+
+    color: white;
+    font-weight: bold;
+    width:100%;
+    border-radius: 3px;
+  }
+  
+  .MsgMe{
+    float: right;
+  }
+  .MsgHim{
+    float: left;
+  }
+
+  .MsgMe h5 {
+    padding:6px;
+    background: #0e2335;
+    width: 100%;
+  }
+  .MsgHim h5{
+    padding:6px;
+    background: #960025;
+    width: 100%;
+
+  }
+
+  .ProjOps{
+    width: 100%;
+  }
+  .ProjOps > .btn{
+    padding: 6px 10px;
+    width:50%;
+  }
+    
+    /* ---------------------------------------------------
+    Spinner
+    ----------------------------------------------------- */
+
+
+    .sk-chase {
+      width: 40px;
+      height: 40px;
+      position: relative;
+      animation: sk-chase 2.5s infinite linear both;
+      margin: 15px auto;
+      display:block;
+    }
+    
+    .sk-chase-dot {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0; 
+      animation: sk-chase-dot 2.0s infinite ease-in-out both; 
+    }
+    
+    .sk-chase-dot:before {
+      content: '';
+      display: block;
+      width: 25%;
+      height: 25%;
+      background-color: #0e1f2d;
+      border-radius: 100%;
+      animation: sk-chase-dot-before 2.0s infinite ease-in-out both; 
+    }
+    
+    .sk-chase-dot:nth-child(1) { animation-delay: -1.1s; }
+    .sk-chase-dot:nth-child(2) { animation-delay: -1.0s; }
+    .sk-chase-dot:nth-child(3) { animation-delay: -0.9s; }
+    .sk-chase-dot:nth-child(4) { animation-delay: -0.8s; }
+    .sk-chase-dot:nth-child(5) { animation-delay: -0.7s; }
+    .sk-chase-dot:nth-child(6) { animation-delay: -0.6s; }
+    .sk-chase-dot:nth-child(1):before { animation-delay: -1.1s; }
+    .sk-chase-dot:nth-child(2):before { animation-delay: -1.0s; }
+    .sk-chase-dot:nth-child(3):before { animation-delay: -0.9s; }
+    .sk-chase-dot:nth-child(4):before { animation-delay: -0.8s; }
+    .sk-chase-dot:nth-child(5):before { animation-delay: -0.7s; }
+    .sk-chase-dot:nth-child(6):before { animation-delay: -0.6s; }
+    
+    @keyframes sk-chase {
+      100% { transform: rotate(360deg); } 
+    }
+    
+    @keyframes sk-chase-dot {
+      80%, 100% { transform: rotate(360deg); } 
+    }
+    
+    @keyframes sk-chase-dot-before {
+      50% {
+        transform: scale(0.4); 
+      } 100%, 0% {
+        transform: scale(1.0); 
+      } 
+    }
